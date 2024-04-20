@@ -53,15 +53,15 @@ public abstract class Hogwarts {
                 '}';
     }
 
-    public static void equalStudents(Hogwarts hgsOne, Hogwarts hgsTwo) {
-        int sumPointOne = hgsOne.conjure + hgsOne.apparition;
-        int sumPointTwo = hgsTwo.conjure + hgsTwo.apparition;
+    public void equalStudents(Hogwarts hgsPerson) {
+        int sumPointOne = conjure + apparition;
+        int sumPointTwo = hgsPerson.conjure + hgsPerson.apparition;
         if (sumPointOne > sumPointTwo) {
-            System.out.println(hgsOne.getFirstname() + " " + hgsOne.getLastname()
-                    + " обладает большей мощностью магии, чем " + hgsTwo.getFirstname() + " " + hgsTwo.getLastname());
+            System.out.println(getFirstname() + " " + getLastname()
+                    + " обладает большей мощностью магии, чем " + hgsPerson.getFirstname() + " " + hgsPerson.getLastname());
         } else {
-            System.out.println(hgsTwo.getFirstname() + " " + hgsTwo.getLastname()
-                    + " обладает большей мощностью магии, чем " + hgsOne.getFirstname() + " " + hgsOne.getLastname());
+            System.out.println(hgsPerson.getFirstname() + " " + hgsPerson.getLastname()
+                    + " обладает большей мощностью магии, чем " + getFirstname() + " " + getLastname());
         }
     }
 

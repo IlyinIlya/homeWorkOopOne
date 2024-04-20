@@ -46,7 +46,7 @@ public class Main {
         ravenclaws[2].printStudents();
         slytherins[0].printStudents();
 
-        Hogwarts.equalStudents(gryffindors[1], ravenclaws[2]);
+        gryffindors[1].equalStudents(ravenclaws[2]);
 
     }
 }

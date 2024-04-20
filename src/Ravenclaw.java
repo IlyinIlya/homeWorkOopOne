@@ -1,4 +1,4 @@
-public class Ravenclaw extends Hogwarts{
+public class Ravenclaw extends Hogwarts {
     private int smart;
     private int witty;
     private int creativity;
@@ -32,5 +32,39 @@ public class Ravenclaw extends Hogwarts{
 
     public void setCreativity(int creativity) {
         this.creativity = creativity;
+    }
+
+    @Override
+    public String toString() {
+        return "Когтевран {" +
+                "Ученик: " + getFirstname() +
+                " " + getLastname() +
+                ", Мудрость: " + smart +
+                ", Остроумность: " + witty +
+                ", Творчество: " + creativity +
+                '}';
+    }
+
+    public void printStudents() {
+        System.out.println("Ученик: " + getFirstname() + " " + getLastname() +
+                "; Сила магии: " + getConjure() +
+                "; Расстояние трансгрессии " + getApparition() +
+                "; Мудрость: " + smart +
+                ", Остроумность: " + witty +
+                ", Творчество: " + creativity);
+    }
+
+    public static void equalStudents(Ravenclaw rOne, Ravenclaw rTwo) {
+        int sumPointOne = rOne.smart + rOne.witty + rOne.creativity +
+                rOne.getConjure() + rOne.getApparition();
+        int sumPointTwo = rTwo.smart + rTwo.witty + rTwo.creativity +
+                rTwo.getConjure() + rTwo.getApparition();
+        if (sumPointOne > sumPointTwo) {
+            System.out.println(rOne.getFirstname() + " " + rOne.getLastname()
+                    + " лучший Когтевранец, чем " + rTwo.getFirstname() + " " + rTwo.getLastname());
+        } else {
+            System.out.println(rTwo.getFirstname() + " " + rTwo.getLastname()
+                    + " лучший Когтевранец, чем " + rOne.getFirstname() + " " + rOne.getLastname());
+        }
     }
 }

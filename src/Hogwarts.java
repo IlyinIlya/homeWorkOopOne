@@ -53,4 +53,17 @@ public class Hogwarts {
                 ", apparition=" + apparition +
                 '}';
     }
+
+    public static void equalStudents(Hogwarts hgsOne, Hogwarts hgsTwo) {
+        int sumPointOne = hgsOne.conjure + hgsOne.apparition;
+        int sumPointTwo = hgsTwo.conjure + hgsTwo.apparition;
+        if (sumPointOne > sumPointTwo) {
+            System.out.println(hgsOne.getFirstname() + " " + hgsOne.getLastname()
+                    + " обладает большей мощностью магии, чем " + hgsTwo.getFirstname() + " " + hgsTwo.getLastname());
+        } else {
+            System.out.println(hgsTwo.getFirstname() + " " + hgsTwo.getLastname()
+                    + " обладает большей мощностью магии, чем " + hgsOne.getFirstname() + " " + hgsOne.getLastname());
+        }
+    }
+
 }

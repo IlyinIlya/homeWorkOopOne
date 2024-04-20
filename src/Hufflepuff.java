@@ -1,4 +1,4 @@
-public class Hufflepuff extends Hogwarts{
+public class Hufflepuff extends Hogwarts {
     private int hardworking;
     private int loyal;
     private int honest;
@@ -44,7 +44,8 @@ public class Hufflepuff extends Hogwarts{
                 ", Честность: " + honest +
                 '}';
     }
-    public void printStudents(){
+
+    public void printStudents() {
         System.out.println("Ученик: " + getFirstname() + " " + getLastname() +
                 "; Сила магии: " + getConjure() +
                 "; Расстояние трансгрессии " + getApparition() +

@@ -3,7 +3,6 @@ public class Hogwarts {
     private String lastname;
     private int conjure;
     private int apparition;
-    //private String faculty;
 
     public Hogwarts(String firstname, String lastname, int conjure, int apparition) {
         this.firstname = firstname;

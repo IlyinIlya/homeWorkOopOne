@@ -9,7 +9,7 @@ public class Main {
                 new Gryffindor("Гермиона", "Грейнджер", 73, 78,
                         14, 16, 22),
                 new Gryffindor("Рон", "Уизли", 59, 42,
-                        11, 24, 19)
+                        11, 21, 19)
         };
         Slytherin[] slytherins = new Slytherin[]{
                 new Slytherin("Драко", "Малфой", 51, 66,
@@ -36,15 +36,10 @@ public class Main {
                         19, 12, 21)
         };
 
-        //System.out.println(Arrays.toString(gryffindors));
-        //System.out.println(Arrays.toString(slytherins));
-        //System.out.println(Arrays.toString(hufflepuffs));
-        //System.out.println(Arrays.toString(ravenclaws));
-
-        Gryffindor.equalStudents(gryffindors[1], gryffindors[2]);
-        Hufflepuff.equalStudents(hufflepuffs[0], hufflepuffs[2]);
-        Ravenclaw.equalStudents(ravenclaws[0], ravenclaws[1]);
-        Slytherin.equalStudents(slytherins[1], slytherins[2]);
+        gryffindors[1].equalStudents(gryffindors[2]);
+        hufflepuffs[0].equalStudents(hufflepuffs[2]);
+        ravenclaws[0].equalStudents(ravenclaws[1]);
+        slytherins[1].equalStudents(slytherins[2]);
 
         gryffindors[0].printStudents();
         hufflepuffs[1].printStudents();

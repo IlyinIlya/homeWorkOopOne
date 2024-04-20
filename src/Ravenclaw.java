@@ -54,17 +54,15 @@ public class Ravenclaw extends Hogwarts {
                 ", Творчество: " + creativity);
     }
 
-    public static void equalStudents(Ravenclaw rOne, Ravenclaw rTwo) {
-        int sumPointOne = rOne.smart + rOne.witty + rOne.creativity +
-                rOne.getConjure() + rOne.getApparition();
-        int sumPointTwo = rTwo.smart + rTwo.witty + rTwo.creativity +
-                rTwo.getConjure() + rTwo.getApparition();
+    public void equalStudents(Ravenclaw rPerson) {
+        int sumPointOne = smart + witty + creativity;
+        int sumPointTwo = rPerson.smart + rPerson.witty + rPerson.creativity;
         if (sumPointOne > sumPointTwo) {
-            System.out.println(rOne.getFirstname() + " " + rOne.getLastname()
-                    + " лучший Когтевранец, чем " + rTwo.getFirstname() + " " + rTwo.getLastname());
+            System.out.println(getFirstname() + " " + getLastname()
+                    + " лучший Когтевранец, чем " + rPerson.getFirstname() + " " + rPerson.getLastname());
         } else {
-            System.out.println(rTwo.getFirstname() + " " + rTwo.getLastname()
-                    + " лучший Когтевранец, чем " + rOne.getFirstname() + " " + rOne.getLastname());
+            System.out.println(rPerson.getFirstname() + " " + rPerson.getLastname()
+                    + " лучший Когтевранец, чем " + getFirstname() + " " + getLastname());
         }
     }
 }

@@ -54,17 +54,15 @@ public class Hufflepuff extends Hogwarts {
                 ", Честность: " + honest);
     }
 
-    public static void equalStudents(Hufflepuff hOne, Hufflepuff hTwo) {
-        int sumPointOne = hOne.hardworking + hOne.loyal + hOne.honest +
-                hOne.getConjure() + hOne.getApparition();
-        int sumPointTwo = hTwo.hardworking + hTwo.loyal + hTwo.honest +
-                hTwo.getConjure() + hTwo.getApparition();
+    public void equalStudents(Hufflepuff hPerson) {
+        int sumPointOne = hardworking + loyal + honest;
+        int sumPointTwo = hPerson.hardworking + hPerson.loyal + hPerson.honest;
         if (sumPointOne > sumPointTwo) {
-            System.out.println(hOne.getFirstname() + " " + hOne.getLastname()
-                    + " лучший Пуффендуец, чем " + hTwo.getFirstname() + " " + hTwo.getLastname());
+            System.out.println(getFirstname() + " " + getLastname()
+                    + " лучший Пуффендуец, чем " + hPerson.getFirstname() + " " + hPerson.getLastname());
         } else {
-            System.out.println(hTwo.getFirstname() + " " + hTwo.getLastname()
-                    + " лучший Пуффендуец, чем " + hOne.getFirstname() + " " + hOne.getLastname());
+            System.out.println(hPerson.getFirstname() + " " + hPerson.getLastname()
+                    + " лучший Пуффендуец, чем " + getFirstname() + " " + getLastname());
         }
     }
 }

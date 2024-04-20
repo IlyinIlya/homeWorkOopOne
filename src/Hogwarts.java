@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private String firstname;
     private String lastname;
     private int conjure;

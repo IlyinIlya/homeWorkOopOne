@@ -54,17 +54,15 @@ public class Slytherin extends Hogwarts {
                 ", Амбициозность" + ambition);
     }
 
-    public static void equalStudents(Slytherin sOne, Slytherin sTwo) {
-        int sumPointOne = sOne.cunning + sOne.resourcefulness + sOne.ambition +
-                sOne.getConjure() + sOne.getApparition();
-        int sumPointTwo = sTwo.cunning + sTwo.resourcefulness + sTwo.ambition +
-                sTwo.getConjure() + sTwo.getApparition();
+    public void equalStudents(Slytherin sPerson) {
+        int sumPointOne = cunning + resourcefulness + ambition;
+        int sumPointTwo = sPerson.cunning + sPerson.resourcefulness + sPerson.ambition;
         if (sumPointOne > sumPointTwo) {
-            System.out.println(sOne.getFirstname() + " " + sOne.getLastname()
-                    + " лучший Слизеринец, чем " + sTwo.getFirstname() + " " + sTwo.getLastname());
+            System.out.println(getFirstname() + " " + getLastname()
+                    + " лучший Слизеринец, чем " + sPerson.getFirstname() + " " + sPerson.getLastname());
         } else {
-            System.out.println(sTwo.getFirstname() + " " + sTwo.getLastname()
-                    + " лучший Слизеринец, чем " + sOne.getFirstname() + " " + sOne.getLastname());
+            System.out.println(sPerson.getFirstname() + " " + sPerson.getLastname()
+                    + " лучший Слизеринец, чем " + getFirstname() + " " + getLastname());
         }
     }
 }
